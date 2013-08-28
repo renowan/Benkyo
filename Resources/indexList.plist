@@ -10,15 +10,21 @@
 	</dict>
 	<dict>
 		<key>recipe</key>
-		<integer>0</integer>
+		<integer>1</integer>
 		<key>name</key>
 		<string>Page 1</string>
 	</dict>
 	<dict>
 		<key>recipe</key>
-		<integer>1</integer>
+		<integer>2</integer>
 		<key>name</key>
 		<string>Page 2</string>
+	</dict>
+	<dict>
+		<key>recipe</key>
+		<integer>3</integer>
+		<key>name</key>
+		<string>二日目</string>
 	</dict>
 
 </array>

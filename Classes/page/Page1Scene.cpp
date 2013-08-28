@@ -46,7 +46,7 @@ bool Page1Scene::init()
     mySp->setPosition(ccp(200, 800));
     mySp2->setPosition(ccp(400, 800));
     
-    mySp->setTag(1);
+    
     
     layer1->addChild(mySp);
     layer1->addChild(mySp2);
@@ -59,17 +59,23 @@ bool Page1Scene::init()
                                                          "image/ui/btn_down.png",
                                                          this, menu_selector(Page1Scene::oshita));
     
+    menuItem1->setTag(1);
+    
  
     CCMenuItemImage *menuItem2 = CCMenuItemImage::create( "image/ui/btn_up.png",
                                                          "image/ui/btn_down.png",
                                                          this, menu_selector(Page1Scene::oshita));
-    
+    menuItem2->setTag(200);
     menuItem2->setPosition(ccp(400, 0));
     CCMenu* menuGroup = CCMenu::create(menuItem1,menuItem2, NULL);
+    
+    
     
     menuGroup->setPosition(ccp(150, 300));
     
     this->addChild(menuGroup);
+    
+    menuGroup->setTag(100);
     
     
     //------------------------------------
@@ -79,7 +85,7 @@ bool Page1Scene::init()
     
 }
 
-void Page1Scene::oshita()
+void Page1Scene::oshita(CCObject* sender)
 {
     CCLOG("oshita!!!!!!");
     
@@ -92,6 +98,10 @@ void Page1Scene::oshita()
 //    CCFiniteTimeAction* move = CCMoveTo::create( 3.0f, ccp(100, 200));
 //    layer1->runAction( CCMoveTo::create( 3.0f, ccp(100, 200)) );
     
+    
+    CCMenu* pMenuItem = (CCMenu *)(sender);
+    int tag = pMenuItem->getTag();
+    CCLOG("Tag : %i",tag);
     
     
     layer1->runAction(

@@ -1,6 +1,9 @@
 #include "IndexPageScene.h"
 #include "Page1Scene.h"
 #include "Page2Scene.h"
+#include "Page3Scene.h"
+#include "TouchTestScene.h"
+#include "BattleScene.h"
 #include <iomanip>
 
 USING_NS_CC;
@@ -116,7 +119,7 @@ void IndexPage::nextScene(int nIndex)
     CCScene* scene = NULL;
     
 
-    
+        
     
     switch (nIndex) {
         case 0:
@@ -126,10 +129,10 @@ void IndexPage::nextScene(int nIndex)
             scene = Page2Scene::scene();
             break;
         case 2:
-            
+            scene = Page3Scene::scene();
             break;
-        case 22:
-
+        case 3:
+            
             break;
 
         default:

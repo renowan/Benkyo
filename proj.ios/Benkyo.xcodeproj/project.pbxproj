@@ -203,6 +203,11 @@
 		1AFCDA8216D4A25900906EA6 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AFCDA8116D4A25900906EA6 /* RootViewController.mm */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		24F6C92917CDB24700D9E963 /* Page3Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24F6C92717CDB24700D9E963 /* Page3Scene.cpp */; };
+		24F6C92C17CDB3F700D9E963 /* MySprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24F6C92A17CDB3F700D9E963 /* MySprite.cpp */; };
+		24F6C93317CDBC1200D9E963 /* TouchTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24F6C93117CDBC1200D9E963 /* TouchTestScene.cpp */; };
+		24F6C93917CDBED800D9E963 /* BattleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24F6C93517CDBED700D9E963 /* BattleScene.cpp */; };
+		24F6C93A17CDBED800D9E963 /* PanelLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24F6C93717CDBED800D9E963 /* PanelLayer.cpp */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		7855E0E1153FEF240059DD9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0DF153FEF240059DD9A /* Default.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
@@ -649,6 +654,16 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* Benkyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Benkyo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		24F6C92717CDB24700D9E963 /* Page3Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Page3Scene.cpp; sourceTree = "<group>"; };
+		24F6C92817CDB24700D9E963 /* Page3Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page3Scene.h; sourceTree = "<group>"; };
+		24F6C92A17CDB3F700D9E963 /* MySprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MySprite.cpp; sourceTree = "<group>"; };
+		24F6C92B17CDB3F700D9E963 /* MySprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySprite.h; sourceTree = "<group>"; };
+		24F6C93117CDBC1200D9E963 /* TouchTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TouchTestScene.cpp; sourceTree = "<group>"; };
+		24F6C93217CDBC1200D9E963 /* TouchTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchTestScene.h; sourceTree = "<group>"; };
+		24F6C93517CDBED700D9E963 /* BattleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleScene.cpp; sourceTree = "<group>"; };
+		24F6C93617CDBED700D9E963 /* BattleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleScene.h; sourceTree = "<group>"; };
+		24F6C93717CDBED800D9E963 /* PanelLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PanelLayer.cpp; sourceTree = "<group>"; };
+		24F6C93817CDBED800D9E963 /* PanelLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanelLayer.h; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7855E0DF153FEF240059DD9A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1463,6 +1478,26 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
+		24F6C93017CDBC1100D9E963 /* touch */ = {
+			isa = PBXGroup;
+			children = (
+				24F6C93117CDBC1200D9E963 /* TouchTestScene.cpp */,
+				24F6C93217CDBC1200D9E963 /* TouchTestScene.h */,
+			);
+			path = touch;
+			sourceTree = "<group>";
+		};
+		24F6C93417CDBED700D9E963 /* layerSample */ = {
+			isa = PBXGroup;
+			children = (
+				24F6C93517CDBED700D9E963 /* BattleScene.cpp */,
+				24F6C93617CDBED700D9E963 /* BattleScene.h */,
+				24F6C93717CDBED800D9E963 /* PanelLayer.cpp */,
+				24F6C93817CDBED800D9E963 /* PanelLayer.h */,
+			);
+			path = layerSample;
+			sourceTree = "<group>";
+		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
@@ -1524,6 +1559,10 @@
 		D665E07917CCC20D00724677 /* page */ = {
 			isa = PBXGroup;
 			children = (
+				24F6C93417CDBED700D9E963 /* layerSample */,
+				24F6C93017CDBC1100D9E963 /* touch */,
+				24F6C92717CDB24700D9E963 /* Page3Scene.cpp */,
+				24F6C92817CDB24700D9E963 /* Page3Scene.h */,
 				D665E07A17CCC20D00724677 /* FormatScene.cpp */,
 				D665E07B17CCC20D00724677 /* FormatScene.h */,
 				D665E07C17CCC20D00724677 /* Page1Scene.cpp */,
@@ -1532,6 +1571,8 @@
 				D665E07F17CCC20D00724677 /* Page2Scene.h */,
 				D665E08017CCC20D00724677 /* RecipeBase.cpp */,
 				D665E08117CCC20D00724677 /* RecipeBase.h */,
+				24F6C92A17CDB3F700D9E963 /* MySprite.cpp */,
+				24F6C92B17CDB3F700D9E963 /* MySprite.h */,
 			);
 			name = page;
 			path = ../Classes/page;
@@ -1823,6 +1864,11 @@
 				D665E08417CCC20D00724677 /* Page2Scene.cpp in Sources */,
 				D665E08517CCC20D00724677 /* RecipeBase.cpp in Sources */,
 				D665E08817CCC22400724677 /* IndexPage.cpp in Sources */,
+				24F6C92917CDB24700D9E963 /* Page3Scene.cpp in Sources */,
+				24F6C92C17CDB3F700D9E963 /* MySprite.cpp in Sources */,
+				24F6C93317CDBC1200D9E963 /* TouchTestScene.cpp in Sources */,
+				24F6C93917CDBED800D9E963 /* BattleScene.cpp in Sources */,
+				24F6C93A17CDBED800D9E963 /* PanelLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
