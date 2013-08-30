@@ -223,6 +223,9 @@
 		D4EF949C15BD2D8E00D803EB /* Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EF949B15BD2D8E00D803EB /* Icon-114.png */; };
 		D4EF949E15BD2D9600D803EB /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EF949D15BD2D9600D803EB /* Icon-72.png */; };
 		D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EF949F15BD2D9800D803EB /* Icon-144.png */; };
+		D6501E9217D0C46F00E04B59 /* SinglePage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6501E9017D0C46F00E04B59 /* SinglePage.cpp */; };
+		D6501E9F17D0D54400E04B59 /* CCJSONConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6501E9917D0D54400E04B59 /* CCJSONConverter.cpp */; };
+		D6501EA017D0D54400E04B59 /* cJSON.c in Sources */ = {isa = PBXBuildFile; fileRef = D6501E9D17D0D54400E04B59 /* cJSON.c */; };
 		D665E07517CCC1F200724677 /* image in Resources */ = {isa = PBXBuildFile; fileRef = D665E07117CCC1F200724677 /* image */; };
 		D665E07617CCC1F200724677 /* imagetest in Resources */ = {isa = PBXBuildFile; fileRef = D665E07217CCC1F200724677 /* imagetest */; };
 		D665E07717CCC1F200724677 /* indexList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D665E07317CCC1F200724677 /* indexList.plist */; };
@@ -680,6 +683,13 @@
 		D4EF949D15BD2D9600D803EB /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "../proj.ios/Icon-72.png"; sourceTree = "<group>"; };
 		D4EF949F15BD2D9800D803EB /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-144.png"; path = "../proj.ios/Icon-144.png"; sourceTree = "<group>"; };
 		D4F9F37B12E54555005CA6D2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		D6501E9017D0C46F00E04B59 /* SinglePage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SinglePage.cpp; sourceTree = "<group>"; };
+		D6501E9117D0C46F00E04B59 /* SinglePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinglePage.h; sourceTree = "<group>"; };
+		D6501E9917D0D54400E04B59 /* CCJSONConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCJSONConverter.cpp; sourceTree = "<group>"; };
+		D6501E9A17D0D54400E04B59 /* CCJSONConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCJSONConverter.h; sourceTree = "<group>"; };
+		D6501E9B17D0D54400E04B59 /* CCJSONData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCJSONData.h; sourceTree = "<group>"; };
+		D6501E9D17D0D54400E04B59 /* cJSON.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cJSON.c; sourceTree = "<group>"; };
+		D6501E9E17D0D54400E04B59 /* cJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cJSON.h; sourceTree = "<group>"; };
 		D665E07117CCC1F200724677 /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
 		D665E07217CCC1F200724677 /* imagetest */ = {isa = PBXFileReference; lastKnownFileType = folder; path = imagetest; sourceTree = "<group>"; };
 		D665E07317CCC1F200724677 /* indexList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = indexList.plist; sourceTree = "<group>"; };
@@ -1504,6 +1514,7 @@
 				15A3D87E1682F7B3002FB0C5 /* cocos2dx.xcodeproj */,
 				15A3D8871682F7D5002FB0C5 /* Box2D */,
 				15A3D93A1682F7F9002FB0C5 /* chipmunk */,
+				D6501E9817D0D54400E04B59 /* jsonconverter */,
 				15AA9C4015B7EC450033D6C2 /* Classes */,
 				15A3DA6B1682F8A6002FB0C5 /* CocosDenshion */,
 				15A3D9B31682F826002FB0C5 /* extensions */,
@@ -1556,9 +1567,32 @@
 			path = ../Resources;
 			sourceTree = "<group>";
 		};
+		D6501E9817D0D54400E04B59 /* jsonconverter */ = {
+			isa = PBXGroup;
+			children = (
+				D6501E9917D0D54400E04B59 /* CCJSONConverter.cpp */,
+				D6501E9A17D0D54400E04B59 /* CCJSONConverter.h */,
+				D6501E9B17D0D54400E04B59 /* CCJSONData.h */,
+				D6501E9C17D0D54400E04B59 /* cJSON */,
+			);
+			name = jsonconverter;
+			path = ../jsonconverter;
+			sourceTree = "<group>";
+		};
+		D6501E9C17D0D54400E04B59 /* cJSON */ = {
+			isa = PBXGroup;
+			children = (
+				D6501E9D17D0D54400E04B59 /* cJSON.c */,
+				D6501E9E17D0D54400E04B59 /* cJSON.h */,
+			);
+			path = cJSON;
+			sourceTree = "<group>";
+		};
 		D665E07917CCC20D00724677 /* page */ = {
 			isa = PBXGroup;
 			children = (
+				D6501E9017D0C46F00E04B59 /* SinglePage.cpp */,
+				D6501E9117D0C46F00E04B59 /* SinglePage.h */,
 				24F6C93417CDBED700D9E963 /* layerSample */,
 				24F6C93017CDBC1100D9E963 /* touch */,
 				24F6C92717CDB24700D9E963 /* Page3Scene.cpp */,
@@ -1869,6 +1903,9 @@
 				24F6C93317CDBC1200D9E963 /* TouchTestScene.cpp in Sources */,
 				24F6C93917CDBED800D9E963 /* BattleScene.cpp in Sources */,
 				24F6C93A17CDBED800D9E963 /* PanelLayer.cpp in Sources */,
+				D6501E9217D0C46F00E04B59 /* SinglePage.cpp in Sources */,
+				D6501E9F17D0D54400E04B59 /* CCJSONConverter.cpp in Sources */,
+				D6501EA017D0D54400E04B59 /* cJSON.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

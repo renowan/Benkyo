@@ -19,7 +19,9 @@ class Page3Scene : public RecipeBase
     public:
         virtual bool init();
         static cocos2d::CCScene* scene();
+        void outputObject(CCObject* obj, const char* key, int level);
         CREATE_FUNC(Page3Scene);
+        
     
 };
 

@@ -4,6 +4,7 @@
 #include "Page3Scene.h"
 #include "TouchTestScene.h"
 #include "BattleScene.h"
+#include "SinglePage.h"
 #include <iomanip>
 
 USING_NS_CC;
@@ -129,7 +130,7 @@ void IndexPage::nextScene(int nIndex)
             scene = Page2Scene::scene();
             break;
         case 2:
-            scene = Page3Scene::scene();
+            scene = SinglePage::scene();
             break;
         case 3:
             
