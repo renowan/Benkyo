@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>recipe</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>アニメ一覧</string>
+	</dict>
+	<dict>
+		<key>recipe</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>Quest</string>
+	</dict>
+	<dict>
+		<key>recipe</key>
+		<integer>2</integer>
+		<key>name</key>
+		<string>Gacha</string>
+	</dict>
+	<dict>
+		<key>recipe</key>
+		<integer>3</integer>
+		<key>name</key>
+		<string>バトルみたいなシーン完全C++</string>
+	</dict>
+	<dict>
+		<key>recipe</key>
+		<integer>4</integer>
+		<key>name</key>
+		<string>スクロールテスト</string>
+	</dict>
+	<dict>
+		<key>recipe</key>
+		<integer>5</integer>
+		<key>name</key>
+		<string>Effect</string>
+	</dict>
+	<dict>
+		<key>recipe</key>
+		<integer>6</integer>
+		<key>name</key>
+		<string>Touch test</string>
+	</dict>
+	<dict>
+		<key>recipe</key>
+		<integer>7</integer>
+		<key>name</key>
+		<string>Read Ccbi</string>
+	</dict>
+	<dict>
+		<key>recipe</key>
+		<integer>8</integer>
+		<key>name</key>
+		<string>Particle</string>
+	</dict>
+	<dict>
+		<key>recipe</key>
+		<integer>9</integer>
+		<key>name</key>
+		<string>Sprite Sheet</string>
+	</dict>
+	<dict>
+		<key>recipe</key>
+		<integer>10</integer>
+		<key>name</key>
+		<string>勉強会1日目</string>
+	</dict>
+
+	<dict>
+		<key>recipe</key>
+		<integer>11</integer>
+		<key>name</key>
+		<string>空ページ</string>
+	</dict>
+</array>
+</plist>

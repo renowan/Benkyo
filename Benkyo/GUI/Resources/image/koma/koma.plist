@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>player_m_action_attack_44_flip_000.png</key>
+		<dict>
+			<key>New item</key>
+			<string>{{273,2},{198,223}}</string>
+			<key>format</key>
+			<string>player_m_action_attack_44_flip_000.png</string>
+			<key>New item - 2</key>
+			<string>{55,-60}</string>
+			<key>New item - 3</key>
+			<true/>
+			<key>New item - 4</key>
+			<string>{{291,154},{198,223}}</string>
+			<key>frameCount</key>
+			<string>4</string>
+			<key>New item - 5</key>
+			<string>{670,411}</string>
+		</dict>
+		<key>player_m_action_attack_44_flip_001.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2,327},{158,269}}</string>
+			<key>frameCount</key>
+			<string>4</string>
+			<key>offset</key>
+			<string>{-21,-45}</string>
+			<key>format</key>
+			<string>player_m_action_attack_44_flip_001.png</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{235,116},{158,269}}</string>
+			<key>sourceSize</key>
+			<string>{670,411}</string>
+		</dict>
+		<key>player_m_action_attack_44_flip_002.png</key>
+		<dict>
+			<key>frameCount</key>
+			<string>6</string>
+			<key>frame</key>
+			<string>{{2,2},{210,323}}</string>
+			<key>offset</key>
+			<string>{24,-19}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{254,63},{210,323}}</string>
+			<key>sourceSize</key>
+			<string>{670,411}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>realTextureFileName</key>
+		<string>koma.png</string>
+		<key>size</key>
+		<string>{512,512}</string>
+		<key>smartupdate</key>
+		<string>$TexturePacker:SmartUpdate:62159ee396dd260d50df5324a93d6bff:1/1$</string>
+		<key>textureFileName</key>
+		<string>koma.png</string>
+	</dict>
+</dict>
+</plist>
