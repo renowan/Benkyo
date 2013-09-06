@@ -11,6 +11,8 @@
 #include "SpriteSheetScene.h"
 #include "Page1Scene.h"
 #include "Page2Scene.h"
+#include "SinglePage.h"
+#include "HelloWorldScene.h"
 #include <iomanip>
 
 USING_NS_CC;
@@ -157,7 +159,7 @@ void IndexPage::nextScene(int nIndex)
             scene = Page1Scene::scene();
             break;
         case 10:
-            scene = Page2Scene::scene();
+            scene = HelloWorld::scene();
             break;
         default:
             break;

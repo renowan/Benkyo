@@ -51,8 +51,8 @@ void ParticleTestScene::particle1()
     
     fire->runAction(
         CCSequence::create(
-            CCDelayTime::create(0.500f),
-            CCEaseExponentialInOut::create(CCMoveTo::create(2.3f, ccp(300, 500))),
+            CCDelayTime::create(0.100f),
+            CCEaseExponentialInOut::create(CCMoveTo::create(1.4f, ccp(300, 500))),
             NULL
         )
     );

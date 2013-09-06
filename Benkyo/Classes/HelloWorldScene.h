@@ -3,6 +3,8 @@
 
 #include "cocos2d.h"
 
+using namespace cocos2d;
+
 class HelloWorld : public cocos2d::CCLayer
 {
 public:
@@ -11,12 +13,16 @@ public:
 
     // there's no 'id' in cpp, so we recommend to return the class instance pointer
     static cocos2d::CCScene* scene();
-    
-    // a selector callback
-    void menuCloseCallback(CCObject* pSender);
 
     // preprocessor macro for "static create()" constructor ( node() deprecated )
     CREATE_FUNC(HelloWorld);
+    
+    
+    
+private:
+    CCPoint positionConverter(int myX ,int myY);
+    int sizeConverter(int mySize);
+    
 };
 
 #endif // __HELLOWORLD_SCENE_H__

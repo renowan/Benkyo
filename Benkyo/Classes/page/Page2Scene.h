@@ -12,14 +12,20 @@
 #include "cocos2d.h"
 #include "RecipeBase.h"
 
+using namespace cocos2d;
+//using namespace extension;
 
 class Page2Scene : public RecipeBase
 {
     
     public:
         virtual bool init();
-        static cocos2d::CCScene* scene();
+        static CCScene* scene();
         CREATE_FUNC(Page2Scene);
+    
+private:
+    CCPoint positionConverter(int myX ,int myY);
+    int sizeConverter(int mySize);
     
 };
 

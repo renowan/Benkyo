@@ -25,7 +25,7 @@
 	<key>javascriptMainCCB</key>
 	<string></string>
 	<key>onlyPublishCCBs</key>
-	<true/>
+	<false/>
 	<key>publishDirectory</key>
 	<string>../Resources</string>
 	<key>publishDirectoryAndroid</key>
@@ -63,7 +63,7 @@
 	<key>publishResolution_xsmall</key>
 	<true/>
 	<key>publishToZipFile</key>
-	<false/>
+	<true/>
 	<key>resourceAutoScaleFactor</key>
 	<integer>4</integer>
 	<key>resourcePaths</key>

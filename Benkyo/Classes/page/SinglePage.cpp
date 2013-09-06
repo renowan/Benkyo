@@ -1,32 +1,30 @@
-#include "HelloWorldScene.h"
+//
+//  Recipe19.cpp
+//  RecipeBook
+//
+//  Created by Akihiro Matsuura on 5/22/13.
+//  Copyright 2013 Syuhari, Inc. All rights reserved.
+//
 
-using namespace cocos2d;
+#include "SinglePage.h"
 
+USING_NS_CC;
 
-CCScene* HelloWorld::scene()
+CCScene* SinglePage::scene()
 {
-    // 'scene' is an autorelease object
     CCScene *scene = CCScene::create();
-    
-    // 'layer' is an autorelease object
-    HelloWorld *layer = HelloWorld::create();
-
-    // add layer as a child to scene
+    SinglePage *layer = SinglePage::create();
     scene->addChild(layer);
-
-    // return the scene
     return scene;
 }
 
-// on "init" you need to initialize your instance
-bool HelloWorld::init()
+bool SinglePage::init()
 {
-    //////////////////////////////
-    // 1. super init first
     if ( !CCLayer::init() )
     {
         return false;
     }
+    
     
     // ここで画像を入れてみた、サイズも自動的に調整してくれることが確認できたい
     //    CCSprite* testSp1 = CCSprite::create("image/quest/04ev_210181.png");
@@ -41,9 +39,9 @@ bool HelloWorld::init()
     myLc->runAction(
                     CCSequence::create(
                                        CCDelayTime::create(0.500f),
-                                       CCEaseExponentialInOut::create(CCMoveTo::create(0.8f, HelloWorld::positionConverter(0,0))),
-                                       CCEaseExponentialInOut::create(CCMoveTo::create(0.8f, HelloWorld::positionConverter(0,860))),
-                                       CCEaseExponentialInOut::create(CCMoveTo::create(0.8f, HelloWorld::positionConverter(540,860))),
+                                       CCEaseExponentialInOut::create(CCMoveTo::create(0.8f, SinglePage::positionConverter(0,0))),
+                                       CCEaseExponentialInOut::create(CCMoveTo::create(0.8f, SinglePage::positionConverter(0,860))),
+                                       CCEaseExponentialInOut::create(CCMoveTo::create(0.8f, SinglePage::positionConverter(540,860))),
                                        NULL
                                        )
                     );
@@ -52,10 +50,8 @@ bool HelloWorld::init()
     return true;
 }
 
-
-
 // 変換関数を作ろうと思ったけど、いらないみたい
-CCPoint HelloWorld::positionConverter(int myX ,int myY)
+CCPoint SinglePage::positionConverter(int myX ,int myY)
 {
     //    CCSize size = CCDirector::sharedDirector()->getVisibleSize();
     
@@ -67,7 +63,7 @@ CCPoint HelloWorld::positionConverter(int myX ,int myY)
     return ccp(myX,myY);
 }
 
-int HelloWorld::sizeConverter(int mySize)
+int SinglePage::sizeConverter(int mySize)
 {
     //    CCSize size = CCDirector::sharedDirector()->getVisibleSize();
     //    if( size.width < 640 ){

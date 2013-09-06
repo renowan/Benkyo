@@ -306,9 +306,8 @@
 		D64F3B2817D619510033A0E3 /* page in Resources */ = {isa = PBXBuildFile; fileRef = D64F3B2717D619510033A0E3 /* page */; };
 		D64F3B3D17D61BEB0033A0E3 /* ccbResources in Resources */ = {isa = PBXBuildFile; fileRef = D64F3B3C17D61BEB0033A0E3 /* ccbResources */; };
 		D667CA0017D764C90060256B /* ccb in Resources */ = {isa = PBXBuildFile; fileRef = D667C9FF17D764C90060256B /* ccb */; };
-		D667CA0717D77C4B0060256B /* SceneChanger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D667CA0517D77C4B0060256B /* SceneChanger.cpp */; };
 		D6AEA7CC17D83F8400EDD020 /* Page1Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6AEA7CA17D83F8400EDD020 /* Page1Scene.cpp */; };
-		D6AEA7CF17D8415200EDD020 /* Page2Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6AEA7CD17D8415200EDD020 /* Page2Scene.cpp */; };
+		D6C06E6117D8662400FA4175 /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6C06E5F17D8662400FA4175 /* Util.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -952,12 +951,10 @@
 		D64F3B5E17D731DA0033A0E3 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Common.h; path = Classes/Common.h; sourceTree = "<group>"; };
 		D64F3B5F17D732B70033A0E3 /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppInfo.h; path = Classes/AppInfo.h; sourceTree = "<group>"; };
 		D667C9FF17D764C90060256B /* ccb */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ccb; path = Resources/ccb; sourceTree = "<group>"; };
-		D667CA0517D77C4B0060256B /* SceneChanger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneChanger.cpp; sourceTree = "<group>"; };
-		D667CA0617D77C4B0060256B /* SceneChanger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneChanger.h; sourceTree = "<group>"; };
 		D6AEA7CA17D83F8400EDD020 /* Page1Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Page1Scene.cpp; sourceTree = "<group>"; };
 		D6AEA7CB17D83F8400EDD020 /* Page1Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page1Scene.h; sourceTree = "<group>"; };
-		D6AEA7CD17D8415200EDD020 /* Page2Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Page2Scene.cpp; sourceTree = "<group>"; };
-		D6AEA7CE17D8415200EDD020 /* Page2Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page2Scene.h; sourceTree = "<group>"; };
+		D6C06E5F17D8662400FA4175 /* Util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Util.cpp; sourceTree = "<group>"; };
+		D6C06E6017D8662400FA4175 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2205,8 +2202,6 @@
 			children = (
 				D6AEA7CA17D83F8400EDD020 /* Page1Scene.cpp */,
 				D6AEA7CB17D83F8400EDD020 /* Page1Scene.h */,
-				D6AEA7CD17D8415200EDD020 /* Page2Scene.cpp */,
-				D6AEA7CE17D8415200EDD020 /* Page2Scene.h */,
 				D64F3B1417D618CC0033A0E3 /* EffectScene.cpp */,
 				D64F3B1517D618CC0033A0E3 /* EffectScene.h */,
 				D64F3ADF17D618A80033A0E3 /* battle */,
@@ -2310,8 +2305,8 @@
 		D667CA0117D777910060256B /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				D667CA0517D77C4B0060256B /* SceneChanger.cpp */,
-				D667CA0617D77C4B0060256B /* SceneChanger.h */,
+				D6C06E5F17D8662400FA4175 /* Util.cpp */,
+				D6C06E6017D8662400FA4175 /* Util.h */,
 			);
 			name = Util;
 			path = Classes/Util;
@@ -2665,9 +2660,8 @@
 				D64F3B1317D618A80033A0E3 /* TouchTestScene.cpp in Sources */,
 				D64F3B1617D618CC0033A0E3 /* EffectScene.cpp in Sources */,
 				D64F3B1917D618F90033A0E3 /* Page1Layer.cpp in Sources */,
-				D667CA0717D77C4B0060256B /* SceneChanger.cpp in Sources */,
 				D6AEA7CC17D83F8400EDD020 /* Page1Scene.cpp in Sources */,
-				D6AEA7CF17D8415200EDD020 /* Page2Scene.cpp in Sources */,
+				D6C06E6117D8662400FA4175 /* Util.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
