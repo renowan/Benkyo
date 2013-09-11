@@ -65,7 +65,7 @@ bool IndexPage::init()
 void IndexPage::tableCellTouched(CCTableView* table, CCTableViewCell* cell)
 {
     CCDictionary* pRecipe = (CCDictionary*)m_pRecipes->objectAtIndex(cell->getIdx());
-    CCString* pNo   = (CCString*)pRecipe->objectForKey("recipe");
+    CCString* pNo   = (CCString*)pRecipe->objectForKey("page");
     
     this->nextScene(pNo->intValue());
 }
@@ -81,17 +81,10 @@ CCTableViewCell* IndexPage::tableCellAtIndex(CCTableView *table, unsigned int id
 {
     CCDictionary* pRecipe = (CCDictionary*)m_pRecipes->objectAtIndex(idx);
     CCString* pName = (CCString*)pRecipe->objectForKey("name");
-    CCString* pNo   = (CCString*)pRecipe->objectForKey("recipe");
-    CCString* pStep = (CCString*)pRecipe->objectForKey("step");
     
-    CCString* string;
-    if (pStep!=NULL) {
-        string = CCString::createWithFormat("Anim %s （ステップ%s）: %s", pNo->getCString(), pStep->getCString(), pName->getCString());
-    } else if (pNo->isEqual(CCString::create("0"))) {
-        string = pName;
-    } else {
-        string = CCString::createWithFormat("No. %s %s", pNo->getCString(), pName->getCString());
-    }
+    int indexNum = idx +1;
+    CCString* string = CCString::createWithFormat("No. %i %s", indexNum, pName->getCString());
+    
     CCTableViewCell *cell = table->dequeueCell();
     if (!cell) {
         cell = new CCTableViewCell();
@@ -101,7 +94,7 @@ CCTableViewCell* IndexPage::tableCellAtIndex(CCTableView *table, unsigned int id
         
         int fontSize = CCEGLView::sharedOpenGLView()->getDesignResolutionSize().height/420.0f * 12;
         CCLabelTTF *label = CCLabelTTF::create(string->getCString(), "Helvetica", fontSize, CCSizeMake(visibleSize.width, visibleSize.height/5), kCCTextAlignmentCenter);
-        label->setPosition(CCPointZero);
+        label->setPosition(ccp(0,-110));
 		label->setAnchorPoint(CCPointZero);
         label->setTag(123);
         cell->addChild(label);
@@ -128,37 +121,37 @@ void IndexPage::nextScene(int nIndex)
     CCScene* scene = NULL;
     
     switch (nIndex) {
-        case 0:
+        case 1:
             scene = QuestScene::create(); 
             break;
-        case 1:
+        case 2:
             scene = Recipe26::scene();
             break;
-        case 2:
+        case 3:
             scene = BattleScene::scene();
             break;
-        case 3:
+        case 4:
             scene = ScrollScene::scene();
             break;
-        case 4:
+        case 5:
             scene = EffectScene::scene();
             break;
-        case 5:
+        case 6:
             scene = TouchTestScene::scene();
             break;
-        case 6:
+        case 7:
             scene = ReadCcbiScene::scene();
             break;
-        case 7:
+        case 8:
             scene = ParticleTestScene::scene();
             break;
-        case 8:
+        case 9:
             scene = SpriteSheetScene::scene();
             break;
-        case 9:
+        case 10:
             scene = Page1Scene::scene();
             break;
-        case 10:
+        case 11:
             scene = HelloWorld::scene();
             break;
         default:
