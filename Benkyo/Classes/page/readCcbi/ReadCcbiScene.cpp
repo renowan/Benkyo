@@ -108,7 +108,7 @@ void ReadCcbiScene::readccbi3()
 void ReadCcbiScene::changeTimeLine()
 {
 //    animManager->runAnimationsForSequenceNamedTweenDuration("kankan", 5);
-    animManager->runAnimations("attack");
+//    animManager->runAnimations("attack");
     animManager->runAnimationsForSequenceNamed("attack");
 }
 
