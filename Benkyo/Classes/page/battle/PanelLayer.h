@@ -24,6 +24,8 @@ public:
     void setExBar( int value );
     CREATE_FUNC(PanelLayer);
 
+private:
+    void testBtnHandler(CCObject* pSender);
 
 };
 

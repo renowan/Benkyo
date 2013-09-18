@@ -31,10 +31,14 @@ class BattleScene : public RecipeBase
         static BattleScene* sharedLayer();
         PanelLayer* panelLayer();
         CREATE_FUNC(BattleScene);
+        void skipAnimation(CCObject* obj);
         
     private:
+        BattleScene();
+        ~BattleScene();
         void monsterBtnHandler(CCObject* pSender);
         void callBackTest();
+        
     
 };
 

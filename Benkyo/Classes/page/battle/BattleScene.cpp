@@ -13,6 +13,16 @@
 
 USING_NS_CC;
 
+BattleScene::BattleScene()
+{
+    
+}
+
+BattleScene::~BattleScene()
+{
+    CCNotificationCenter::sharedNotificationCenter()->removeObserver(this, "ober");
+}
+
 CCScene* BattleScene::scene()
 {
     CCScene *scene = CCScene::create();
@@ -111,6 +121,8 @@ bool BattleScene::init()
     this->addChild(panelLayer,0,PanelLayerTag);
     
     
+    CCNotificationCenter::sharedNotificationCenter()->addObserver(this, callfuncO_selector(BattleScene::skipAnimation), "ober", NULL);
+    
     return true;
     
 }
@@ -199,4 +211,10 @@ void BattleScene::callBackTest()
     }
     
 }
+
+void BattleScene::skipAnimation(CCObject* obj)
+{
+    CCLOG("skipAnimation. Receive Observer.");
+}
+
 

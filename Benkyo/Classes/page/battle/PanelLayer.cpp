@@ -10,6 +10,7 @@
 #include "PanelLayer.h"
 #include <ccTypes.h>
 #include "cocos2d.h"
+#include "BattleScene.h"
 
 USING_NS_CC;
 
@@ -49,6 +50,23 @@ bool PanelLayer::init()
     barCover->setPosition(ccp(0,0));
     this->addChild(barCover);
     
+    
+    // クリック用のボタン
+    CCMenuItemImage *pCloseItem = CCMenuItemImage::create(
+                                                          "image/ui/common_ui_mainButton_up.png",
+                                                          "image/ui/common_ui_mainButton_down.png",
+                                                          this,
+                                                          menu_selector(PanelLayer::testBtnHandler));
+    
+    // 表示位置を指定
+    pCloseItem->setPosition(ccp(350,430));
+    // CCMenuItemImage から CCMenuを作成
+    CCMenu* pMenu = CCMenu::create(pCloseItem, NULL);
+    // CCMenuとしての位置は(0,0)を指定
+    pMenu->setPosition(-150,130);
+    
+    this->addChild(pMenu);
+    
     return true;
 }
 
@@ -72,4 +90,13 @@ void PanelLayer::setExBar(int value)
     );
     
 }
+
+void PanelLayer::testBtnHandler(CCObject* pSender)
+{
+    CCLOG("panelLayer btn handler, Dispatch Observer");
+//    BattleScene::skipAnimation();
+    
+    CCNotificationCenter::sharedNotificationCenter()->postNotification("ober");
+}
+    
 
