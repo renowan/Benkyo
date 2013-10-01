@@ -63,7 +63,7 @@
 	<key>publishResolution_xsmall</key>
 	<true/>
 	<key>publishToZipFile</key>
-	<true/>
+	<false/>
 	<key>resourceAutoScaleFactor</key>
 	<integer>4</integer>
 	<key>resourcePaths</key>

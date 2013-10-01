@@ -2,8 +2,10 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+#include "cocos-ext.h"
 
 using namespace cocos2d;
+using namespace extension;
 
 class HelloWorld : public cocos2d::CCLayer
 {
@@ -17,12 +19,8 @@ public:
     // preprocessor macro for "static create()" constructor ( node() deprecated )
     CREATE_FUNC(HelloWorld);
     
-    
-    
-private:
-    CCPoint positionConverter(int myX ,int myY);
-    int sizeConverter(int mySize);
-    
 };
+
+
 
 #endif // __HELLOWORLD_SCENE_H__

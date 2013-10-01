@@ -10,10 +10,15 @@
 #define _RecipeBook_SpriteSheetScene_H_
 
 #include "cocos2d.h"
+#include "cocos-ext.h"
 #include "RecipeBase.h"
 
 
+using namespace cocos2d;
+using namespace extension;
+
 class SpriteSheetScene : public RecipeBase
+, public CCBAnimationManagerDelegate
 {
     
     public:
@@ -21,7 +26,17 @@ class SpriteSheetScene : public RecipeBase
         static cocos2d::CCScene* scene();
         CREATE_FUNC(SpriteSheetScene);
     
+    
+    private :
+    void setAnimationManager(CCBAnimationManager *pAnimationManager);
+    virtual void completedAnimationSequenceNamed(const char *name);
+    CCNode*                 body;
+    CCBAnimationManager*    boyManager;
+    void attackMotion();
+    
 };
+
+
 
 
 
